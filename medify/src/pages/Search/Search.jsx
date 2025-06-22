@@ -155,6 +155,7 @@ export default function Search(){
           open={showToast}
           setOpen={setShowToast}
         />
+        localStorage.setItem("state","city")
       </Box>
     </>
   );

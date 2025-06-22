@@ -4,7 +4,7 @@ import { useState } from "react";
 import icon from "../../assets/div.u-pos-has.png";
 import thumb from "../../assets/span.o-label--success.png";
 import Calendar from "../../components/Calendar/Calendars";
-
+import { format } from "date-fns";
 export default function HospitalCard({
   details,
   availableSlots,
@@ -139,7 +139,7 @@ export default function HospitalCard({
                 sx={{ borderRadius: 1, fontSize: 14 }}
               />
               <Chip
-                label={(new Date(details.bookingDate), "dd MMMM yyyy")}
+                label={format(new Date(details.bookingDate), "dd MMMM yyyy")}
                 variant="outlined"
                 color="success"
                 sx={{ borderRadius: 1, fontSize: 14 }}
