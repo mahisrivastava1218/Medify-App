@@ -1,9 +1,16 @@
-import './App.css';
+import { Outlet } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div>Hello</div>
+    <>
+       {/* {/* <CssBaseline /> */}
+      <Outlet/>
+      <Footer />  
+      <div>Hello</div>
+    </>
   );
-}
+};
 
 export default App;
