@@ -12,7 +12,7 @@ export default function MyBookings() {
 
   // Fetch bookings from local storage when the component mounts
   useEffect(() => {
-    const storedBookings = localStorage.getItem("booking") || "[]";
+    const storedBookings = localStorage.getItem("allBookings") || "[]";
     setAllBookings(JSON.parse(storedBookings));
   }, []);
 

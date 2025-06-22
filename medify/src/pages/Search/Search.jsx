@@ -40,11 +40,11 @@ export default function Search(){
     setCities(selectedCity);
 
     if (selectedState && selectedCity) {
-      fetchHospitalAvailableData(selectedState, selectedCity);
+      getHospitals(selectedState, selectedCity);
     }
   }, [searchParams]);
 
-  const fetchHospitalAvailableData = async (state, city) => {
+  const getHospitals = async (state, city) => {
     setIsLoading(true);
     setHospital([]);
     try {

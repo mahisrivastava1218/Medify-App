@@ -125,8 +125,9 @@ export default function HospitalCard({
                 variant="contained"
                 disableElevation
                 onClick={() => setShowCalendar((prev) => !prev)}
+                label="Book FREE Center Visit"
               >
-                {showCalendar ? "Hide Calendar" : "Book Free Visit"}
+                {showCalendar ? "Hide Calendar" : "Book FREE Center Visit"}
               </Button>
             </>
           ) : (
