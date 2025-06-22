@@ -59,7 +59,7 @@ export default function SearchHospitals(){
             flexDirection:{xs:"column",md:"row"}
         }}
         >
-        <Select displayEmpty name="state" value={formData.state} onChange={handleChange}
+        <Select displayEmpty name="state" id="state" value={formData.state} onChange={handleChange}
         startAdornment={
               <InputAdornment position="start">
             <SearchIcon/>
@@ -77,7 +77,7 @@ export default function SearchHospitals(){
                 </MenuItem>
             ))}
         </Select>
-          <Select displayEmpty name="city" value={formData.city} onChange={handleChange}
+          <Select displayEmpty name="city" id="city" value={formData.city} onChange={handleChange}
         sx={{minWidth:240, width:"95%"}}
          startAdornment={
               <InputAdornment position="start">
@@ -95,7 +95,7 @@ export default function SearchHospitals(){
                 </MenuItem>
             ))} 
         </Select>
-        <Button startIcon=<SearchIcon/> type="submit" variant="contained" sx={{px:8,py:"10px"}} disableElevation size="large">Search</Button> 
+        <Button startIcon=<SearchIcon/> type="submit" labeled="Search" id="searchBtn" variant="contained" sx={{px:8,py:"10px"}} disableElevation size="large">Search</Button> 
         </Box>
     )
 }
