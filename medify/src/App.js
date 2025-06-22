@@ -5,10 +5,9 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <>
-       {/* {/* <CssBaseline /> */}
+       <CssBaseline /> 
       <Outlet/>
       <Footer />  
-      <div>Hello</div>
     </>
   );
 };
