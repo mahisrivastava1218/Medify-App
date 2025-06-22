@@ -96,7 +96,7 @@ export default function Search(){
         <Container maxWidth="xl" sx={{ pt: 10, pb: 10 }}>
           {hospital.length > 0 && (
             <Box mb={3}>
-              <Typography variant="h5" fontWeight={500} gutterBottom>
+              <Typography component="h1" fontWeight={500} gutterBottom>
                 {hospital.length} medical centers available in{" "}
                 <span style={{ textTransform: "capitalize" }}>{cities?.toLowerCase()}</span>
               </Typography>
