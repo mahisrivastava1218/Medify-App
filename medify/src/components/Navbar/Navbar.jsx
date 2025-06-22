@@ -63,7 +63,7 @@ export default function Navbar(){
                           <Link to="#">Surgeries</Link>
                           <Link to="#"  >Software for Provider</Link>
                           <Link to="#" >Facilities</Link>
-                          <Link to="/bookings">
+                          <Link to="/my-bookings">
                             <Button variant="contained">My Bookings</Button>
                           </Link>
                            {/* Close Icon on Mobile */}
