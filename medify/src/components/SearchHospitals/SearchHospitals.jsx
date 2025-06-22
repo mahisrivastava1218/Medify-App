@@ -12,7 +12,7 @@ export default function SearchHospitals(){
     useEffect(()=>{
         const fetchStates= async()=>{
             try{
-                const response = axios.get("https://meddata-backend.onrender.com/states");
+                const response = await axios.get("https://meddata-backend.onrender.com/states");
                 setState(response.data);
             }catch(e){
                 console.error("unable to fetch States:",e);
@@ -42,7 +42,7 @@ export default function SearchHospitals(){
         }
     }
     const handleChange = (event)=>{
-       const[name,value]=event.target;
+       const{name,value}=event.target;
        setFormData((prev)=>({
         ...prev,
         [name]: value

@@ -1,0 +1,22 @@
+/* Style for each individual day slide */
+.swiperslide {
+  width: calc(100% / 3 - 20px) !important; /* 3 slides per row minus spacing */
+  overflow: hidden;
+}
+
+/* Main Swiper container styling */
+.swiperStyles {
+  padding: 0 50px; /* space on left and right */
+  width: 100%;
+}
+
+/* Responsive styles for screens smaller than 900px */
+@media (max-width: 900px) {
+  .swiperStyles {
+    padding: 0; /* Remove side padding on small screens */
+  }
+
+  .swiperslide {
+    width: auto !important; /* Let Swiper control width on mobile */
+  }
+}
